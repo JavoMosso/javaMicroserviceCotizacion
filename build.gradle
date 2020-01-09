@@ -1,0 +1,268 @@
+buildscript {
+    ext {
+        axionReleaseVersion = '1.7.0'
+    }
+    repositories {
+        maven { url "http://nexus.gnp.mx/repository/maven-central/" }
+        maven { url "http://nexus.gnp.mx/repository/maven-releases/" }
+        maven { url "http://nexus.gnp.mx/repository/third_party_libraries/" }
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath "pl.allegro.tech.build:axion-release-plugin:${axionReleaseVersion}"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'maven'
+    id 'maven-publish'
+    id 'org.springframework.boot' version '2.1.1.RELEASE'
+    id 'checkstyle'
+    id 'org.sonarqube' version '2.7'
+    id 'jacoco'
+}
+
+group 'com.gnp.autos.wsp'
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'pl.allegro.tech.build.axion-release'
+apply from: "${rootDir}/jacoco.gradle"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def jaxbClassesDir = "${buildDir}/classes/jaxb"
+
+repositories {
+    maven { url "http://nexus.gnp.mx/repository/maven-central/"}
+    maven { url "http://nexus.gnp.mx/repository/maven-releases/"}
+    maven { url "http://nexus.gnp.mx/repository/third_party_libraries/"}
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Greenwich.RELEASE"
+    }
+}
+
+configurations {
+    all*.exclude module : 'logback-classic'
+    all*.exclude module : 'log4j-over-slf4j'
+    jaxb
+}
+
+ext {
+    minCoverageRates = [
+        'instruction': 85,
+        'branch'     : 85,
+        'line'       : 85,
+        'complexity' : 85,
+        'method'     : 85,
+        'class'      : 85
+    ]
+    
+    coverageExclusions = ['**/config/**', '**/error/**', '**/model/**', '**Application**']
+    
+    pkg = "com.gnp.autos.wsp.cotizador.eot"
+    
+    jaxbTasks = [
+        jaxbMuc: [url: "http://10.67.0.37/motorUnicoCalculoWeb/MotorUnicoCalculoWebImplPort?wsdl", package: "${pkg}.wsdl", auto: true,bindings: "binding.xjb"],
+        jaxbRules: [url: "http://10.67.16.13:7950/esb/autos/reglas/ServicioReglasAutosCotizador?wsdl", package: "${pkg}.rules.wsdl", auto: true],
+        jaxbFoliador: [url: "http://10.67.0.37/odsWeb/FoliadorWebImplPort?wsdl", package: "${pkg}.foliador.wsdl", auto: true],
+        jaxRulesProd: [url: "http://10.67.16.13:7950/esb/autos/reglas/ServicioReglasAutosProductos?wsdl", package: "${pkg}.rulesprod.wsdl", auto: true]
+    ]
+}
+
+jaxbTasks.each { n, t -> 
+    tasks.create(name: n) {
+        ext.sourcesDir = "${buildDir}/generated-sources/jaxb/${name}"
+        ext.classesDir = jaxbClassesDir
+        ext.schema = t.url
+        outputs.dir classesDir
+        
+        doLast() {
+            project.ant {
+                taskdef name: "xjc", classname: "com.sun.tools.xjc.XJCTask", classpath: configurations.jaxb.asPath
+                mkdir(dir: sourcesDir)
+                mkdir(dir: classesDir)
+    
+                xjc(destdir: sourcesDir, schema: schema, package: t.package) {
+                    arg(value: "-wsdl")
+                    if (t.auto) {
+                        arg(value: "-XautoNameResolution")
+                    }
+                    if (t.bindings) {
+                        binding(dir: "bindings") {
+                            include(name: t.bindings)
+                        }
+                    }
+                    produces(dir: sourcesDir, includes: "**/*.java")
+                }
+    
+                javac(destdir: classesDir, source: 1.8, target: 1.8, debug: true, debugLevel: "lines,vars,source",
+                        classpath: configurations.jaxb.asPath, includeAntRuntime: false) {
+                    src(path: sourcesDir)
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile 'com.gnp.autos.wsp:AUT_MSV_WSP_Error_Handler:1.0.2'
+    compile 'com.gnp.autos.wsp:AUT_MSV_WSP_Lib_Negocio:1.1.8'
+
+    compile 'org.springframework.boot:spring-boot-devtools'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-web-services'
+    compile 'org.springframework.boot:spring-boot-starter-cache'
+    compile 'org.springframework.boot:spring-boot-starter-actuator'
+    
+    compile 'commons-lang:commons-lang:2.6'
+    compile 'org.apache.httpcomponents:httpclient:4.5'
+    compile 'javax.ws.rs:javax.ws.rs-api:2.0'
+    compile 'org.slf4j:slf4j-log4j12:1.7.25'
+    compile 'joda-time:joda-time:2.9.9'
+    
+    compile 'io.springfox:springfox-swagger2:2.6.1'
+    compile 'io.springfox:springfox-swagger-ui:2.6.1'
+
+    compileOnly 'org.projectlombok:lombok:1.16.10'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'com.google.code.gson:gson:2.3.1'
+   
+    jaxbTasks.each { name, t ->
+        compile files(jaxbClassesDir, {
+            builtBy name
+        })
+    }
+    
+    jaxb "com.sun.xml.bind:jaxb-xjc:2.1.7"
+}
+
+jar {
+    baseName = project.property('jar.name')
+    manifest {
+       attributes 'Implementation-Title': project.name,
+                  'Implementation-Version': project.version,
+                  'Implementation-Vendor-Id': project.group,
+                  'Implementation-Vendor': 'GNP',
+                  'Implementation-URL': 'http://git.gnp.mx/autos/ws-preferente/wsp-cotizador-eot'
+    }
+}
+
+archivesBaseName = jar.baseName
+
+javadoc {
+    failOnError = false
+    options.encoding = 'UTF-8'
+}
+
+springBoot {
+    buildInfo()
+}
+
+scmVersion {
+    useHighestVersion = true
+    repository {
+        pushTagsOnly = true
+        customUsername = 'autoversioner'
+    }
+    tag {
+        prefix = project.name
+    }
+    checks {
+        uncommittedChanges = false
+        aheadOfRemote = false
+    }
+}
+
+project.version = scmVersion.version
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+            artifactId = jar.baseName
+            pom.withXml {
+                asNode().dependencies.'*'.findAll() {
+                    it.scope.text() == 'runtime' && project.configurations.compile.allDependencies.find { 
+                        dep -> dep.name == it.artifactId.text()
+                    }
+                }.each() {
+                    it.scope*.value = 'compile'
+                }
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            credentials {
+                username project.property("nexusUser")
+                password project.property("nexusPassword")
+            }
+            def urlRepo = project.version.endsWith('-SNAPSHOT') ? "$nexusSnapUrl" : "$nexusUrl"
+            url "$urlRepo"
+        }
+    }
+}
+
+checkstyle {
+    sourceSets = [project.sourceSets.main]
+    checkstyleMain.exclude "**/model/**"
+}
+
+tasks.withType(Checkstyle).each { checkstyleTask ->
+    checkstyleTask.doLast {
+        reports.all { report ->
+            def outputFile = report.destination
+            if (outputFile.exists() && outputFile.text.contains("<error ")) {
+                throw new GradleException("There were checkstyle warnings! For more info check $outputFile")
+            }
+        }
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.buildbreaker.skip", "false"
+        property "sonar.exclusions","**/config/**,**/error/**,**Application**,**RulesDomainImpl**,**RulesProdDomainImpl**"
+        property "sonar.coverage.exclusions", "**/config/**,**/model/**,**/error/**,**Application**"
+    }
+}
+
+jacoco {
+    reportsDir = file("${buildDir}/reports/jacoco/")
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        csv.enabled false
+        html.destination file("${buildDir}/reports/jacoco")
+    }
+}
+
+test {
+    systemProperty "file.encoding", "UTF-8"
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+task afterEclipseImport {
+    jaxbTasks.each { name, t ->
+        dependsOn name
+    }
+}
+
+task wrapper( type: Wrapper ){
+    gradleVersion = '4.4'
+}

@@ -1,0 +1,4013 @@
+{
+  "id": 96,
+  "nombre": "PEMEX COOPERATIVA",
+  "codigoPromocion": "COP0000153                    ",
+  "esUmo": true,
+  "negocio": {
+    "id": 1,
+    "version": 9,
+    "nombre": "PEMEX",
+    "estructura": {
+      "ramo": {
+        "clave": "A",
+        "nombre": "Autos               "
+      },
+      "producto": {
+        "claveComercial": "00001     ",
+        "claveTecnico": "A2400LNEVO",
+        "nombre": "SEGUROS PERSONALES  ",
+        "descripcion": "SEGUROS PERSONALES                                "
+      },
+      "negocioComercial": {
+        "id": 1,
+        "nombre": "NC Concentrador                                                                                     "
+      },
+      "objetoAsegurado": "0000000091",
+      "idNegocioRetro": "NOP0000002",
+      "agrupadorCombinaciones": {
+        "id": 1,
+        "nombre": "Agrupador Worksite            ",
+        "descripcion": "Worksite - MON0000001"
+      }
+    },
+    "modeloNegocio": {
+      "id": "MON0000001",
+      "descripcion": null,
+      "segmento": {
+        "clave": "SEM",
+        "nombre": "Seguros Masivos                                                                                     "
+      },
+      "clasificacionSeguro": {
+        "clave": "02",
+        "nombre": "Lineas Personales No Vida",
+        "claveInfo": "0002"
+      }
+    },
+    "claveNegocioInfo": "1                                                 ",
+    "estatus": "PUBLICADO",
+    "modificaciones": "poliza padre ADR 310818",
+    "inicio": "2018-08-31T12:52:52.735",
+    "fin": null
+  },
+  "dominios": {
+    "combinaciones": [
+      {
+        "id": 3,
+        "agrupador": {
+          "id": 1,
+          "nombre": "Agrupador Worksite            "
+        },
+        "subRamo": {
+          "clave": "01 ",
+          "nombre": "VEHICULOS RESIDENTES                                                                                "
+        },
+        "persona": {
+          "clave": "F",
+          "nombre": "FISICA                        "
+        },
+        "uso": {
+          "clave": "01",
+          "nombre": "Particular"
+        },
+        "vehiculo": {
+          "clave": "AUT",
+          "nombre": "AUTOMOVIL                                                                                           "
+        },
+        "paquetes": [
+          {
+            "id": 13,
+            "version": 1,
+            "productoPersonalizado": "PRP0000041",
+            "alias": "AMPLIA MÁS                                       ",
+            "nombre": "AMPLIA MÁS-17-13                                 ",
+            "preferente": true,
+            "configuracion": {
+              "alias": "AMPLIA MÁS                                       ",
+              "vigencias": [
+                {
+                  "clave": "MA"
+                },
+                {
+                  "clave": "ME"
+                },
+                {
+                  "clave": "AN"
+                }
+              ],
+              "tarifa": {
+                "clave": "1",
+                "fecha": "2018-04-15"
+              },
+              "ultimaVersionTarifa": true,
+              "reglaTransformacion": {
+                "clave": "0000000012",
+                "fecha": "2014-10-01"
+              }
+            },
+            "indemnizaciones": [
+              {
+                "clave": "01",
+                "nombre": "VALOR COMERCIAL     ",
+                "preferente": true
+              },
+              {
+                "clave": "02",
+                "nombre": "VALOR FACTURA       ",
+                "preferente": false
+              },
+              {
+                "clave": "03",
+                "nombre": "VALOR CONVENIDO     ",
+                "preferente": false
+              },
+              {
+                "clave": "04",
+                "nombre": "VALOR CONVENIDO+10% ",
+                "preferente": false
+              }
+            ],
+            "coberturas": [
+              {
+                "cobertura": {
+                  "clave": "0000000916",
+                  "nombre": "Robo Total",
+                  "orden": 4
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "NO_APLICA"
+                  },
+                  {
+                    "elemento": {
+                      "codigo": "CDDEDUCI",
+                      "id": 1,
+                      "nombre": "DEDUCIBLE                     "
+                    },
+                    "unidadMedida": {
+                      "clave": "PORC ",
+                      "nombre": "%                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "10                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "20                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5                             ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3                             ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "0                             ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001453",
+                  "nombre": "Responsabilidad Civil Ocupantes",
+                  "orden": 17
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001289",
+                  "nombre": "Daños Materiales Pérdida Parcial",
+                  "orden": 2
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "NO_APLICA"
+                  },
+                  {
+                    "elemento": {
+                      "codigo": "CDDEDUCI",
+                      "id": 1,
+                      "nombre": "DEDUCIBLE                     "
+                    },
+                    "unidadMedida": {
+                      "clave": "PORC ",
+                      "nombre": "%                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "10                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3                             ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "5                             ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001268",
+                  "nombre": "Club GNP Autos",
+                  "orden": 9
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "AMPARADA"
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000904",
+                  "nombre": "Extensión Cobertura Resp. Civil",
+                  "orden": 8
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001285",
+                  "nombre": "Protección Legal",
+                  "orden": 6
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001273",
+                  "nombre": "Responsabilidad Civil por Daños a Terceros",
+                  "orden": 5
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001415",
+                  "nombre": "Auto Sustituto Plus",
+                  "orden": 13
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "DIAS ",
+                      "nombre": "DIAS                                                                  "
+                    },
+                    "valores": [
+                      {
+                        "valor": "15                            ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "30                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "10                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "20                            ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001348",
+                  "nombre": "Ayuda para Pérdidas Totales",
+                  "orden": 11
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "15000                         ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "7500                          ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000909",
+                  "nombre": "Protección Auxiliar",
+                  "orden": 10
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "AMPARADA"
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001414",
+                  "nombre": "Auto Sustituto",
+                  "orden": 12
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "DIAS ",
+                      "nombre": "DIAS                                                                  "
+                    },
+                    "valores": [
+                      {
+                        "valor": "10                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "30                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "20                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "15                            ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000891",
+                  "nombre": "Cristales",
+                  "orden": 3
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "AMPARADA"
+                  },
+                  {
+                    "elemento": {
+                      "codigo": "CDDEDUCI",
+                      "id": 1,
+                      "nombre": "DEDUCIBLE                     "
+                    },
+                    "unidadMedida": {
+                      "clave": "PORC ",
+                      "nombre": "%                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "20                            ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001288",
+                  "nombre": "Daños Materiales Pérdida Total",
+                  "orden": 1
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CDDEDUCI",
+                      "id": 1,
+                      "nombre": "DEDUCIBLE                     "
+                    },
+                    "unidadMedida": {
+                      "clave": "PORC ",
+                      "nombre": "%                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "3                             ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "0                             ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "10                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5                             ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  },
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "NO_APLICA"
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001452",
+                  "nombre": "Responsabilidad Civil por Fallecimiento",
+                  "orden": 16
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "500000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000893",
+                  "nombre": "Accidentes al Conductor",
+                  "orden": 14
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "300000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "100000                        ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "200000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "50000                         ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "250000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "150000                        ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000894",
+                  "nombre": "Adap. Conversiones y Equipo Esp.",
+                  "orden": 15
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "AMPARADA"
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000906",
+                  "nombre": "Gastos Médicos Ocupantes",
+                  "orden": 7
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "300000                        ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "120000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "200000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "400000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "150000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "500000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "100000                        ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              }
+            ],
+            "tipoElite": null
+          },
+          {
+            "id": 105,
+            "version": 1,
+            "productoPersonalizado": "PRP0000042",
+            "alias": "LIMITADA                                          ",
+            "nombre": "LIMITADA-9-105                                    ",
+            "preferente": false,
+            "configuracion": {
+              "alias": "LIMITADA                                          ",
+              "vigencias": [
+                {
+                  "clave": "MA"
+                },
+                {
+                  "clave": "ME"
+                },
+                {
+                  "clave": "AN"
+                }
+              ],
+              "tarifa": {
+                "clave": "1",
+                "fecha": "2018-04-15"
+              },
+              "ultimaVersionTarifa": true,
+              "reglaTransformacion": {
+                "clave": "0000000012",
+                "fecha": "2014-10-01"
+              }
+            },
+            "indemnizaciones": [
+              {
+                "clave": "01",
+                "nombre": "VALOR COMERCIAL     ",
+                "preferente": true
+              },
+              {
+                "clave": "02",
+                "nombre": "VALOR FACTURA       ",
+                "preferente": false
+              },
+              {
+                "clave": "03",
+                "nombre": "VALOR CONVENIDO     ",
+                "preferente": false
+              },
+              {
+                "clave": "04",
+                "nombre": "VALOR CONVENIDO+10% ",
+                "preferente": false
+              }
+            ],
+            "coberturas": [
+              {
+                "cobertura": {
+                  "clave": "0000000904",
+                  "nombre": "Extensión Cobertura Resp. Civil",
+                  "orden": 8
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001268",
+                  "nombre": "Club GNP Autos",
+                  "orden": 9
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "AMPARADA"
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001452",
+                  "nombre": "Responsabilidad Civil por Fallecimiento",
+                  "orden": 16
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "500000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001453",
+                  "nombre": "Responsabilidad Civil Ocupantes",
+                  "orden": 17
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001273",
+                  "nombre": "Responsabilidad Civil por Daños a Terceros",
+                  "orden": 5
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000916",
+                  "nombre": "Robo Total",
+                  "orden": 4
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CDDEDUCI",
+                      "id": 1,
+                      "nombre": "DEDUCIBLE                     "
+                    },
+                    "unidadMedida": {
+                      "clave": "PORC ",
+                      "nombre": "%                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "20                            ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5                             ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "10                            ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "3                             ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "0                             ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  },
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "NO_APLICA"
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000893",
+                  "nombre": "Accidentes al Conductor",
+                  "orden": 14
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CDDEDUCI",
+                      "id": 1,
+                      "nombre": "DEDUCIBLE                     "
+                    },
+                    "unidadMedida": {
+                      "clave": "DSMG ",
+                      "nombre": "DSMG : Días de Salario Mínimo Gravable                              "
+                    },
+                    "valores": [],
+                    "visualiza": null
+                  },
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "50000                         ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "250000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "300000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "150000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "200000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "100000                        ",
+                        "defecto": true
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000906",
+                  "nombre": "Gastos Médicos Ocupantes",
+                  "orden": 7
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "120000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "400000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "100000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "150000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "200000                        ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "300000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "500000                        ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001285",
+                  "nombre": "Protección Legal",
+                  "orden": 6
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              }
+            ],
+            "tipoElite": null
+          },
+          {
+            "id": 75,
+            "version": 1,
+            "productoPersonalizado": "PRP0000043",
+            "alias": "RESPONSABILIDAD CIVIL                             ",
+            "nombre": "RESPONSABILIDAD CIVIL-7-75                        ",
+            "preferente": false,
+            "configuracion": {
+              "alias": "RESPONSABILIDAD CIVIL                             ",
+              "vigencias": [
+                {
+                  "clave": "MA"
+                },
+                {
+                  "clave": "ME"
+                },
+                {
+                  "clave": "AN"
+                }
+              ],
+              "tarifa": {
+                "clave": "1",
+                "fecha": "2018-04-15"
+              },
+              "ultimaVersionTarifa": true,
+              "reglaTransformacion": {
+                "clave": "0000000012",
+                "fecha": "2014-10-01"
+              }
+            },
+            "indemnizaciones": [
+              {
+                "clave": "01",
+                "nombre": "VALOR COMERCIAL     ",
+                "preferente": true
+              },
+              {
+                "clave": "02",
+                "nombre": "VALOR FACTURA       ",
+                "preferente": false
+              },
+              {
+                "clave": "03",
+                "nombre": "VALOR CONVENIDO     ",
+                "preferente": false
+              },
+              {
+                "clave": "04",
+                "nombre": "VALOR CONVENIDO+10% ",
+                "preferente": false
+              }
+            ],
+            "coberturas": [
+              {
+                "cobertura": {
+                  "clave": "0000001273",
+                  "nombre": "Responsabilidad Civil por Daños a Terceros",
+                  "orden": 5
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001453",
+                  "nombre": "Responsabilidad Civil Ocupantes",
+                  "orden": 17
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001452",
+                  "nombre": "Responsabilidad Civil por Fallecimiento",
+                  "orden": 16
+                },
+                "tipoCobertura": {
+                  "id": 2,
+                  "nombre": "Opcional                                          "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "500000                        ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000904",
+                  "nombre": "Extensión Cobertura Resp. Civil",
+                  "orden": 8
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001285",
+                  "nombre": "Protección Legal",
+                  "orden": 6
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "5000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "3000000                       ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "2500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "1500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "2000000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4500000                       ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "4000000                       ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000000906",
+                  "nombre": "Gastos Médicos Ocupantes",
+                  "orden": 7
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [
+                      {
+                        "valor": "400000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "500000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "200000                        ",
+                        "defecto": true
+                      },
+                      {
+                        "valor": "100000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "120000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "150000                        ",
+                        "defecto": false
+                      },
+                      {
+                        "valor": "300000                        ",
+                        "defecto": false
+                      }
+                    ],
+                    "visualiza": null
+                  }
+                ],
+                "elite": false
+              },
+              {
+                "cobertura": {
+                  "clave": "0000001268",
+                  "nombre": "Club GNP Autos",
+                  "orden": 9
+                },
+                "tipoCobertura": {
+                  "id": 1,
+                  "nombre": "Basica                                            "
+                },
+                "elementos": [
+                  {
+                    "elemento": {
+                      "codigo": "CPASEGUR",
+                      "id": 2,
+                      "nombre": "SUMA ASEGURADA                "
+                    },
+                    "unidadMedida": {
+                      "clave": "IMPT ",
+                      "nombre": "$                                                                     "
+                    },
+                    "valores": [],
+                    "visualiza": "AMPARADA"
+                  }
+                ],
+                "elite": false
+              }
+            ],
+            "tipoElite": null
+          }
+        ]
+      }
+    ],
+    "intermediarios": {
+      "comisionGeneral": {
+        "baseComision": {
+          "id": "RG",
+          "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+        },
+        "unidadMedida": {
+          "clave": "PORC ",
+          "nombre": "%                                                                     "
+        },
+        "valor": 8.0
+      },
+      "excepcionesDeComision": [
+        {
+          "id": 77,
+          "tipoVehiculo": {
+            "clave": "CA4",
+            "nombre": "CAMIONES (HASTA 14 TONS.)                                                                           "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 78,
+          "tipoVehiculo": {
+            "clave": "CA5",
+            "nombre": "CAMIONES (MAYORES 14 TONS.)                                                                         "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 79,
+          "tipoVehiculo": {
+            "clave": "ELE",
+            "nombre": "VEHICULO ELECTRICO                                                                                  "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 80,
+          "tipoVehiculo": {
+            "clave": "MIC",
+            "nombre": "MICROBUS                                                                                            "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 81,
+          "tipoVehiculo": {
+            "clave": "MIN",
+            "nombre": "MINIBUS                                                                                             "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 82,
+          "tipoVehiculo": {
+            "clave": "MOT",
+            "nombre": "MOTOCICLETA                                                                                         "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 83,
+          "tipoVehiculo": {
+            "clave": "REM",
+            "nombre": "REMOLQUE                                                                                            "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 84,
+          "tipoVehiculo": {
+            "clave": "TR2",
+            "nombre": "TRACTOCAMIONES DOBLE REMOLQUE                                                                       "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 85,
+          "tipoVehiculo": {
+            "clave": "TRC",
+            "nombre": "CAMION -TRACTOCAMION                                                                                "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 69,
+          "tipoVehiculo": {
+            "clave": "AUF",
+            "nombre": "AUTOMOVIL                                                                                           "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 70,
+          "tipoVehiculo": {
+            "clave": "AUT",
+            "nombre": "AUTOMOVIL                                                                                           "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 71,
+          "tipoVehiculo": {
+            "clave": "BUS",
+            "nombre": "BUS - AUTOBUS                                                                                       "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 72,
+          "tipoVehiculo": {
+            "clave": "C1F",
+            "nombre": "CAMIONES (HASTA 1.5 TONS.)                                                                          "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 73,
+          "tipoVehiculo": {
+            "clave": "C2F",
+            "nombre": "CAMIONES (HASTA 3.5 TONS.)                                                                          "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 74,
+          "tipoVehiculo": {
+            "clave": "CA1",
+            "nombre": "CAMIONES (HASTA 1.5 TONS.)                                                                          "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 75,
+          "tipoVehiculo": {
+            "clave": "CA2",
+            "nombre": "CAMIONES (HASTA 3.5 TONS.)                                                                          "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        },
+        {
+          "id": 76,
+          "tipoVehiculo": {
+            "clave": "CA3",
+            "nombre": "CAMIONES (HASTA 7.5 TONS.)                                                                          "
+          },
+          "baseComision": {
+            "id": "RG",
+            "tipoBase": "Prima neta más recargos/descuentos mas gastos                                                      "
+          },
+          "valor": 8.0
+        }
+      ],
+      "agentes": [
+        {
+          "principal": true,
+          "porcentajeParticipacion": 100.0,
+          "porcentajeCesion": 0.0,
+          "folio": "P0025032",
+          "claveUnica": "71777",
+          "intermediario": {
+            "codigoIntermediario": "0071777001",
+            "id": "FARRIA072149",
+            "codigoFiliacion": "0000403030                      ",
+            "rfc": "AILF750304AJ3",
+            "nombre": "Francisco Javier Arriaga Lozano",
+            "rol": "INT",
+            "clase": {
+              "clave": "A",
+              "nombre": "Agente"
+            },
+            "tipo": "F"
+          },
+          "direccionAgencia": {
+            "id": "PROASO13A48D",
+            "rol": "DAG",
+            "clave": "0339 ",
+            "estatus": "A",
+            "clasificacionSeguro": {
+              "clave": "06",
+              "nombre": "Lineas Comerciales BPE",
+              "claveInfo": "0006"
+            }
+          }
+        }
+      ],
+      "udis": [
+        {
+          "id": 70,
+          "valor": 10.0,
+          "baseComision": {
+            "id": "PG",
+            "tipoBase": "Prima Neta mas Gastos                                                                               "
+          },
+          "unidadMedida": {
+            "clave": "PORC ",
+            "nombre": "%                                                                     "
+          },
+          "intermediario": {
+            "id": "PALHIE136E9F",
+            "codigoIntermediario": "0077380001",
+            "codigoFiliacion": "0000112944                      ",
+            "rfc": "PHI830429MG6 ",
+            "nombre": "El Palacio de Hierro, S.A. de C.V.",
+            "rol": "INT",
+            "clase": {
+              "clave": "U",
+              "nombre": "UDI Principal"
+            },
+            "tipo": "M"
+          },
+          "direccionAgencia": {
+            "id": "OFSEGN13FF62",
+            "rol": "DAG",
+            "clave": "0042 ",
+            "estatus": "A",
+            "clasificacionSeguro": null
+          }
+        }
+      ]
+    },
+    "normatividades": {
+      "contrato": "30962",
+      "convenio": null,
+      "antiguedades": [
+        {
+          "minimo": "-20",
+          "maximo": "-11",
+          "procedencia": {
+            "clave": "06 ",
+            "nombre": "VEHICULOS BLINDADOS                                                                                 "
+          }
+        },
+        {
+          "minimo": "-44",
+          "maximo": "-8",
+          "procedencia": {
+            "clave": "10 ",
+            "nombre": "VEHICULOS LEGALIZADOS                                                                               "
+          }
+        },
+        {
+          "minimo": "-20",
+          "maximo": "1",
+          "procedencia": {
+            "clave": "01 ",
+            "nombre": "VEHICULOS RESIDENTES                                                                                "
+          }
+        },
+        {
+          "minimo": "-20",
+          "maximo": "1",
+          "procedencia": {
+            "clave": "02 ",
+            "nombre": "VEHICULOS IMPORTADOS                                                                                "
+          }
+        },
+        {
+          "minimo": "-47",
+          "maximo": "-5",
+          "procedencia": {
+            "clave": "03 ",
+            "nombre": "VEHICULOS FRONTERIZOS                                                                               "
+          }
+        },
+        {
+          "minimo": "-39",
+          "maximo": "-9",
+          "procedencia": {
+            "clave": "05 ",
+            "nombre": "VEHICULOS ANTIGUOS                                                                                  "
+          }
+        },
+        {
+          "minimo": "-67",
+          "maximo": "-10",
+          "procedencia": {
+            "clave": "04 ",
+            "nombre": "VEHICULOS CLASICOS                                                                                  "
+          }
+        }
+      ],
+      "normativas": [
+        {
+          "valor": "7.00                ",
+          "unidadMedida": {
+            "clave": "DIAS ",
+            "nombre": "DIAS                                                                  "
+          },
+          "leyenda": {
+            "clave": "RTA",
+            "nombre": "Retroactividad                ",
+            "unidadMedida": {
+              "clave": "DIAS ",
+              "nombre": "DIAS                                                                  "
+            },
+            "valorDefault": "0                   "
+          }
+        },
+        {
+          "valor": "15.00               ",
+          "unidadMedida": {
+            "clave": "DIAS ",
+            "nombre": "DIAS                                                                  "
+          },
+          "leyenda": {
+            "clave": "VCO",
+            "nombre": "Vigencia de la cotizacion     ",
+            "unidadMedida": {
+              "clave": "DIAS ",
+              "nombre": "DIAS                                                                  "
+            },
+            "valorDefault": "15                  "
+          }
+        },
+        {
+          "valor": "75.00               ",
+          "unidadMedida": {
+            "clave": "DIAS ",
+            "nombre": "DIAS                                                                  "
+          },
+          "leyenda": {
+            "clave": "EAN",
+            "nombre": "Emision anticipada nuevo neg  ",
+            "unidadMedida": {
+              "clave": "DIAS ",
+              "nombre": "DIAS                                                                  "
+            },
+            "valorDefault": "45                  "
+          }
+        },
+        {
+          "valor": "75.00               ",
+          "unidadMedida": {
+            "clave": "DIAS ",
+            "nombre": "DIAS                                                                  "
+          },
+          "leyenda": {
+            "clave": "EAR",
+            "nombre": "Emision anticipada renova     ",
+            "unidadMedida": {
+              "clave": "DIAS ",
+              "nombre": "DIAS                                                                  "
+            },
+            "valorDefault": "45                  "
+          }
+        },
+        {
+          "valor": "89.00               ",
+          "unidadMedida": {
+            "clave": "DIAS ",
+            "nombre": "DIAS                                                                  "
+          },
+          "leyenda": {
+            "clave": "VMI",
+            "nombre": "Vigencia minima de la poliza  ",
+            "unidadMedida": {
+              "clave": "DIAS ",
+              "nombre": "DIAS                                                                  "
+            },
+            "valorDefault": "365                 "
+          }
+        },
+        {
+          "valor": "120.00              ",
+          "unidadMedida": {
+            "clave": "DIAS ",
+            "nombre": "DIAS                                                                  "
+          },
+          "leyenda": {
+            "clave": "PDG",
+            "nombre": "Periodo de gracia             ",
+            "unidadMedida": {
+              "clave": "DIAS ",
+              "nombre": "DIAS                                                                  "
+            },
+            "valorDefault": "30                  "
+          }
+        },
+        {
+          "valor": "1826.00             ",
+          "unidadMedida": {
+            "clave": "DIAS ",
+            "nombre": "DIAS                                                                  "
+          },
+          "leyenda": {
+            "clave": "VMP",
+            "nombre": "Vigencia maxima de la poliza  ",
+            "unidadMedida": {
+              "clave": "DIAS ",
+              "nombre": "DIAS                                                                  "
+            },
+            "valorDefault": "365                 "
+          }
+        }
+      ]
+    },
+    "canales": {
+      "nombre": "DEP0000073                                        ",
+      "descripcion": "PEMEX                                                                 ",
+      "canalDistribucion": {
+        "id": 7,
+        "nombre": "Modulos en sitio              ",
+        "puntosVenta": true
+      },
+      "puntosVenta": []
+    },
+    "impresiones": {
+      "impresiones": [
+        {
+          "correoElectronico": true,
+          "impresionFisica": true,
+          "transaccion": {
+            "id": 3,
+            "nombre": "Renovacion                    "
+          },
+          "documentos": [
+            {
+              "numeroCopias": null,
+              "documento": {
+                "clave": "6  ",
+                "descripcion": "Condiciones Generales Auto Único                                                                   ",
+                "url": "http://PORTALSERVER/RenderWeb/RenderServlet?library=EmpleadoContenido&name=CondicionesGeneralesAU                                                                                                                                                         ",
+                "archivo": "CCGG Seguro de Autos Individual.pdf               ",
+                "guardarExpediente": true
+              }
+            },
+            {
+              "numeroCopias": null,
+              "documento": {
+                "clave": "11 ",
+                "descripcion": "Carátula de póliza responsabilidad civil vehícular                                               ",
+                "url": null,
+                "archivo": "                                                  ",
+                "guardarExpediente": true
+              }
+            },
+            {
+              "numeroCopias": null,
+              "documento": {
+                "clave": "13 ",
+                "descripcion": "Póliza                                                                                             ",
+                "url": null,
+                "archivo": "                                                  ",
+                "guardarExpediente": true
+              }
+            }
+          ]
+        },
+        {
+          "correoElectronico": true,
+          "impresionFisica": true,
+          "transaccion": {
+            "id": 1,
+            "nombre": "Emision                       "
+          },
+          "documentos": [
+            {
+              "numeroCopias": null,
+              "documento": {
+                "clave": "13 ",
+                "descripcion": "Póliza                                                                                             ",
+                "url": null,
+                "archivo": "                                                  ",
+                "guardarExpediente": true
+              }
+            },
+            {
+              "numeroCopias": null,
+              "documento": {
+                "clave": "6  ",
+                "descripcion": "Condiciones Generales Auto Único                                                                   ",
+                "url": "http://PORTALSERVER/RenderWeb/RenderServlet?library=EmpleadoContenido&name=CondicionesGeneralesAU                                                                                                                                                         ",
+                "archivo": "CCGG Seguro de Autos Individual.pdf               ",
+                "guardarExpediente": true
+              }
+            },
+            {
+              "numeroCopias": null,
+              "documento": {
+                "clave": "11 ",
+                "descripcion": "Carátula de póliza responsabilidad civil vehícular                                               ",
+                "url": null,
+                "archivo": "                                                  ",
+                "guardarExpediente": true
+              }
+            }
+          ]
+        }
+      ],
+      "beneficios": [
+        {
+          "id": 3,
+          "nombre": "Asistencia Vial",
+          "url": "BENWS003"
+        }
+      ],
+      "contacto": {
+        "nombre": "Adrian Villagomez Lopez",
+        "correoElectronico": "adrian.villagomez@gnp.com.mx",
+        "telefono": "(044)55-10-81-11-72",
+        "participante": {
+          "id": "9RNAPS1636F3",
+          "nombre": "GRUPO NACIONAL PROVINCIAL, S.A.B.",
+          "nombreCorto": "",
+          "rfc": "GNP9211244PO ",
+          "curp": null,
+          "tipo": "M"
+        }
+      },
+      "formatos": [
+        {
+          "cobertura": {
+            "clave": "0000000893",
+            "nombre": "Accidentes al Conductor"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000000891",
+            "nombre": "Cristales"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                },
+                {
+                  "otraEtiqueta": "AMPARADA",
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000000894",
+            "nombre": "Adap. Conversiones y Equipo Esp."
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000000904",
+            "nombre": "Extensión Cobertura Resp. Civil"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000000906",
+            "nombre": "Gastos Médicos Ocupantes"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000000909",
+            "nombre": "Protección Auxiliar"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": "AMPARADA",
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001268",
+            "nombre": "Club GNP Autos"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": "AMPARADA",
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000000916",
+            "nombre": "Robo Total"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "03",
+                "nombre": "VALOR CONVENIDO     "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "01",
+                "nombre": "VALOR COMERCIAL     "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "02",
+                "nombre": "VALOR FACTURA       "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "04",
+                "nombre": "VALOR CONVENIDO+10% "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001273",
+            "nombre": "Responsabilidad Civil por Daños a Terceros"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001285",
+            "nombre": "Protección Legal"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": "AMPARADA",
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001288",
+            "nombre": "Daños Materiales Pérdida Total"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "02",
+                "nombre": "VALOR FACTURA       "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "04",
+                "nombre": "VALOR CONVENIDO+10% "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "01",
+                "nombre": "VALOR COMERCIAL     "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "03",
+                "nombre": "VALOR CONVENIDO     "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001289",
+            "nombre": "Daños Materiales Pérdida Parcial"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "02",
+                "nombre": "VALOR FACTURA       "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "01",
+                "nombre": "VALOR COMERCIAL     "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "03",
+                "nombre": "VALOR CONVENIDO     "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            },
+            {
+              "formaIndemnizacion": {
+                "clave": "04",
+                "nombre": "VALOR CONVENIDO+10% "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 3,
+                    "nombre": "Forma Indemnizacion           "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 5,
+                    "nombre": "Valor Vehiculo                "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001348",
+            "nombre": "Ayuda para Pérdidas Totales"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001414",
+            "nombre": "Auto Sustituto"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001415",
+            "nombre": "Auto Sustituto Plus"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001452",
+            "nombre": "Responsabilidad Civil por Fallecimiento"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "cobertura": {
+            "clave": "0000001453",
+            "nombre": "Responsabilidad Civil Ocupantes"
+          },
+          "formasIndemnizacion": [
+            {
+              "formaIndemnizacion": {
+                "clave": "05",
+                "nombre": "NO APLICA           "
+              },
+              "elementos": [
+                {
+                  "otraEtiqueta": "No aplica",
+                  "elemento": {
+                    "codigo": "CDDEDUCI",
+                    "id": 1,
+                    "nombre": "DEDUCIBLE                     "
+                  },
+                  "formaImpresion": {
+                    "id": 4,
+                    "nombre": "Otra                          "
+                  }
+                },
+                {
+                  "otraEtiqueta": null,
+                  "elemento": {
+                    "codigo": "CPASEGUR",
+                    "id": 2,
+                    "nombre": "SUMA ASEGURADA                "
+                  },
+                  "formaImpresion": {
+                    "id": 1,
+                    "nombre": "Por valor                     "
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cobranzas": {
+      "condiciones": {
+        "agrupacionLargoPlazo": {
+          "id": 1,
+          "nombre": "Factor dummy 1      "
+        },
+        "agrupadorRecargo": {
+          "id": 2,
+          "nombre": "Recargo dummy 2               "
+        },
+        "claveCobroDerechoPoliza": {
+          "clave": "PR",
+          "nombre": "Prorrateado                                                                                         "
+        },
+        "claveAjusteIrregular": {
+          "clave": "PR",
+          "nombre": "Primer Recibo"
+        },
+        "agrupacionZonificacion": {
+          "id": 1,
+          "nombre": "ZONIFICACION                  "
+        },
+        "agrupadorDerechoPoliza": {
+          "id": 3,
+          "version": 1,
+          "nombre": "Agrupador Migracion Poliza3",
+          "estatus": "PUBLICADO",
+          "fechaAplicacion": "2017-09-12",
+          "derechosPoliza": [
+            {
+              "transaccion": {
+                "id": 2,
+                "nombre": "Cotizacion                    "
+              },
+              "monto": 390.0
+            },
+            {
+              "transaccion": {
+                "id": 3,
+                "nombre": "Renovacion                    "
+              },
+              "monto": 390.0
+            },
+            {
+              "transaccion": {
+                "id": 1,
+                "nombre": "Emision                       "
+              },
+              "monto": 390.0
+            },
+            {
+              "transaccion": {
+                "id": 6,
+                "nombre": "Movimientos                   "
+              },
+              "monto": 0.0
+            }
+          ]
+        },
+        "ultimaVersionAgrupadorDerechoPoliza": false
+      },
+      "cobranzas": [
+        {
+          "preferente": false,
+          "conductoCobro": {
+            "clave": "BC",
+            "nombre": "Bancario"
+          },
+          "formas": [
+            {
+              "formaPago": {
+                "clave": "A",
+                "nombre": "Anual                         "
+              }
+            },
+            {
+              "formaPago": {
+                "clave": "S",
+                "nombre": "Semestral                     "
+              }
+            },
+            {
+              "formaPago": {
+                "clave": "U",
+                "nombre": "Única                        "
+              }
+            },
+            {
+              "formaPago": {
+                "clave": "M",
+                "nombre": "Mensual                       "
+              }
+            }
+          ],
+          "nominas": [],
+          "gpays": [],
+          "msis": []
+        },
+        {
+          "preferente": false,
+          "conductoCobro": {
+            "clave": "BN",
+            "nombre": "Bancario Calendarizado"
+          },
+          "formas": [
+            {
+              "formaPago": {
+                "clave": "M",
+                "nombre": "Mensual                       "
+              }
+            }
+          ],
+          "nominas": [
+            {
+              "tipoNominaNegocio": {
+                "id": 14,
+                "tipoNomina": "PEP BN",
+                "idCobranza": "0000000446          ",
+                "claveTipoNomina": "P6"
+              },
+              "preferente": false
+            },
+            {
+              "tipoNominaNegocio": {
+                "id": 21,
+                "tipoNomina": "ACTIVOS Y JUBILADOS BN",
+                "idCobranza": "0000000447          ",
+                "claveTipoNomina": "P4"
+              },
+              "preferente": false
+            },
+            {
+              "tipoNominaNegocio": {
+                "id": 19,
+                "tipoNomina": "MANDOS SUPERIORES BN",
+                "idCobranza": "0000000446          ",
+                "claveTipoNomina": "P5"
+              },
+              "preferente": false
+            }
+          ],
+          "gpays": [],
+          "msis": []
+        },
+        {
+          "preferente": false,
+          "conductoCobro": {
+            "clave": "CL",
+            "nombre": "Cobro en linea"
+          },
+          "formas": [
+            {
+              "formaPago": {
+                "clave": "A",
+                "nombre": "Anual                         "
+              }
+            },
+            {
+              "formaPago": {
+                "clave": "U",
+                "nombre": "Única                        "
+              }
+            }
+          ],
+          "nominas": [],
+          "gpays": [
+            {
+              "id": 7,
+              "tipoAfiliacion": null,
+              "afiliacion": "9350561131          ",
+              "comercioInterno": "GNPM002",
+              "comercioExterno": "9350561131",
+              "tipoOperacion": "60",
+              "subTipoOperacion": "0",
+              "terminalOrigen": "GNP3306             ",
+              "terminalExterna": "96200208  ",
+              "numeroTerminal": 3,
+              "caja": 2,
+              "oficina": 92
+            },
+            {
+              "id": 8,
+              "tipoAfiliacion": null,
+              "afiliacion": "1598184             ",
+              "comercioInterno": "GNPM003",
+              "comercioExterno": "1598184   ",
+              "tipoOperacion": "60",
+              "subTipoOperacion": "0",
+              "terminalOrigen": "GNP3306             ",
+              "terminalExterna": "96200208  ",
+              "numeroTerminal": 3,
+              "caja": 3,
+              "oficina": 58
+            }
+          ],
+          "msis": [
+            {
+              "id": 11,
+              "entidadFinanciera": {
+                "clave": "0002",
+                "nombre": "BANAMEX"
+              },
+              "meses": 6,
+              "inicio": "2000-01-01",
+              "fin": "9999-12-31"
+            },
+            {
+              "id": 12,
+              "entidadFinanciera": {
+                "clave": "0103",
+                "nombre": "AMERICAN EXPRESS"
+              },
+              "meses": 6,
+              "inicio": "2000-01-01",
+              "fin": "9999-12-31"
+            }
+          ]
+        },
+        {
+          "preferente": true,
+          "conductoCobro": {
+            "clave": "DN",
+            "nombre": "Descuento por nómina"
+          },
+          "formas": [
+            {
+              "formaPago": {
+                "clave": "M",
+                "nombre": "Mensual                       "
+              }
+            }
+          ],
+          "nominas": [
+            {
+              "tipoNominaNegocio": {
+                "id": 24,
+                "tipoNomina": "PEP DxN",
+                "idCobranza": "20150002            ",
+                "claveTipoNomina": "P3"
+              },
+              "preferente": false
+            },
+            {
+              "tipoNominaNegocio": {
+                "id": 7,
+                "tipoNomina": "MANDOS SUPERIORES DxN",
+                "idCobranza": "20151000            ",
+                "claveTipoNomina": "P2"
+              },
+              "preferente": false
+            },
+            {
+              "tipoNominaNegocio": {
+                "id": 12,
+                "tipoNomina": "ACTIVOS Y JUBILADOS DxN",
+                "idCobranza": "20150001            ",
+                "claveTipoNomina": "P1"
+              },
+              "preferente": true
+            }
+          ],
+          "gpays": [],
+          "msis": []
+        },
+        {
+          "preferente": false,
+          "conductoCobro": {
+            "clave": "IN",
+            "nombre": "Intermediario"
+          },
+          "formas": [
+            {
+              "formaPago": {
+                "clave": "A",
+                "nombre": "Anual                         "
+              }
+            },
+            {
+              "formaPago": {
+                "clave": "U",
+                "nombre": "Única                        "
+              }
+            },
+            {
+              "formaPago": {
+                "clave": "M",
+                "nombre": "Mensual                       "
+              }
+            }
+          ],
+          "nominas": [],
+          "gpays": [],
+          "msis": []
+        }
+      ],
+      "descuentos": [
+        {
+          "descuento": {
+            "codigo": "VADESVOL",
+            "version": 1,
+            "nombre": "VALOR DEL DESC VOLUM     ",
+            "estatus": "PUBLICADO",
+            "inicio": "2000-01-01",
+            "fin": null,
+            "maximo": 100.0,
+            "minimo": 0.0
+          },
+          "transacciones": [
+            {
+              "transaccion": {
+                "id": 1,
+                "nombre": "Emision                       "
+              },
+              "valor": 12.5
+            },
+            {
+              "transaccion": {
+                "id": 6,
+                "nombre": "Movimientos                   "
+              },
+              "valor": 12.5
+            },
+            {
+              "transaccion": {
+                "id": 3,
+                "nombre": "Renovacion                    "
+              },
+              "valor": 12.5
+            }
+          ]
+        }
+      ]
+    },
+    "polizas": [
+      {
+        "id": 14419,
+        "polizaPadre": "00000375931417",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "BN",
+          "nombre": "Bancario Calendarizado"
+        },
+        "nomina": {
+          "id": 14,
+          "tipoNomina": "PEP BN",
+          "idCobranza": "0000000446          ",
+          "claveTipoNomina": null
+        }
+      },
+      {
+        "id": 14420,
+        "polizaPadre": "00000375931425",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "BN",
+          "nombre": "Bancario Calendarizado"
+        },
+        "nomina": {
+          "id": 21,
+          "tipoNomina": "ACTIVOS Y JUBILADOS BN",
+          "idCobranza": "0000000447          ",
+          "claveTipoNomina": null
+        }
+      },
+      {
+        "id": 14421,
+        "polizaPadre": "00000375931433",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "BN",
+          "nombre": "Bancario Calendarizado"
+        },
+        "nomina": {
+          "id": 19,
+          "tipoNomina": "MANDOS SUPERIORES BN",
+          "idCobranza": "0000000446          ",
+          "claveTipoNomina": null
+        }
+      },
+      {
+        "id": 14423,
+        "polizaPadre": "00000375931441",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "BC",
+          "nombre": "Bancario"
+        },
+        "nomina": null
+      },
+      {
+        "id": 14444,
+        "polizaPadre": "00000375931409",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "CL",
+          "nombre": "Cobro en linea"
+        },
+        "nomina": null
+      },
+      {
+        "id": 14706,
+        "polizaPadre": "00000375931409",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "DN",
+          "nombre": "Descuento por nómina"
+        },
+        "nomina": {
+          "id": 24,
+          "tipoNomina": "PEP DxN",
+          "idCobranza": "20150002            ",
+          "claveTipoNomina": null
+        }
+      },
+      {
+        "id": 14707,
+        "polizaPadre": "00000375931409",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "DN",
+          "nombre": "Descuento por nómina"
+        },
+        "nomina": {
+          "id": 7,
+          "tipoNomina": "MANDOS SUPERIORES DxN",
+          "idCobranza": "20151000            ",
+          "claveTipoNomina": null
+        }
+      },
+      {
+        "id": 14708,
+        "polizaPadre": "00000375931409",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "DN",
+          "nombre": "Descuento por nómina"
+        },
+        "nomina": {
+          "id": 12,
+          "tipoNomina": "ACTIVOS Y JUBILADOS DxN",
+          "idCobranza": "20150001            ",
+          "claveTipoNomina": null
+        }
+      },
+      {
+        "id": 14709,
+        "polizaPadre": "00000375931409",
+        "versionPolizaPadre": 0,
+        "inicio": "2018-08-07",
+        "fin": "2019-08-07",
+        "conductoCobro": {
+          "clave": "IN",
+          "nombre": "Intermediario"
+        },
+        "nomina": null
+      }
+    ]
+  }
+}

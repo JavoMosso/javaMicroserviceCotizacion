@@ -1,0 +1,598 @@
+{
+  "idNegocio": "NOVENTADIR",
+  "versionNegocio": 18,
+  "paquetes": [
+    {
+      "cvePaquete": "PRCA2AMSVD",
+      "descPaquete": "AMPLIA PLUS-17-1                                  ",
+      "coberturas": [
+        {
+          "cveCobertura": "0000001288",
+          "descCobertura": "Daños Materiales Pérdida Total",
+          "sas": [
+            {
+              "valor": "101115.000",
+              "valorFormato": "$ 101,115"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "3",
+              "valorFormato": "$ 3,033"
+            }
+          ],
+          "orden": 1,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001289",
+          "descCobertura": "Daños Materiales Pérdida Parcial",
+          "sas": [
+            {
+              "valor": "101115.000",
+              "valorFormato": "$ 101,115"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "3",
+              "valorFormato": "$ 3,033"
+            }
+          ],
+          "orden": 2,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000891",
+          "descCobertura": "Cristales",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "20",
+              "valorFormato": "20 %"
+            }
+          ],
+          "orden": 3,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000916",
+          "descCobertura": "Robo Total",
+          "sas": [
+            {
+              "valor": "101115.000",
+              "valorFormato": "$ 101,115"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "5",
+              "valorFormato": "$ 5,055"
+            }
+          ],
+          "orden": 4,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001273",
+          "descCobertura": "Responsabilidad Civil por Daños a Terceros",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "$ 3,000,000"
+            }
+          ],
+          "deducibles": [],
+          "orden": 5,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001285",
+          "descCobertura": "Protección Legal",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 6,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000906",
+          "descCobertura": "Gastos Médicos Ocupantes",
+          "sas": [
+            {
+              "valor": "200000",
+              "valorFormato": "$ 200,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 7,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000904",
+          "descCobertura": "Extensión Cobertura Resp. Civil",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "$ 3,000,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 8,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001268",
+          "descCobertura": "Club GNP Autos",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 9,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001414",
+          "descCobertura": "Auto Sustituto",
+          "sas": [
+            {
+              "valor": "15",
+              "valorFormato": "15 días"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 12,
+          "idTipoCobertura": 0,
+          "elite": false
+        }
+      ]
+    },
+    {
+      "cvePaquete": "PRCA2LIMVD",
+      "descPaquete": "LIMITADA-11-99                                    ",
+      "coberturas": [
+        {
+          "cveCobertura": "0000000916",
+          "descCobertura": "Robo Total",
+          "sas": [
+            {
+              "valor": "101115.000",
+              "valorFormato": "$ 101,115"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "0",
+              "valorFormato": "$ 0"
+            }
+          ],
+          "orden": 4,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001273",
+          "descCobertura": "Responsabilidad Civil por Daños a Terceros",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "$ 3,000,000"
+            }
+          ],
+          "deducibles": [],
+          "orden": 5,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001285",
+          "descCobertura": "Protección Legal",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 6,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000906",
+          "descCobertura": "Gastos Médicos Ocupantes",
+          "sas": [
+            {
+              "valor": "200000",
+              "valorFormato": "$ 200,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 7,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000904",
+          "descCobertura": "Extensión Cobertura Resp. Civil",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "$ 3,000,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 8,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001268",
+          "descCobertura": "Club GNP Autos",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 9,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001499",
+          "descCobertura": "Protege GNP",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "NO APLICA"
+            }
+          ],
+          "orden": 26,
+          "idTipoCobertura": 0,
+          "elite": false
+        }
+      ]
+    },
+    {
+      "cvePaquete": "PRCA2RC0VD",
+      "descPaquete": "RESPONSABILIDAD CIVIL-8-84                        ",
+      "coberturas": [
+        {
+          "cveCobertura": "0000001273",
+          "descCobertura": "Responsabilidad Civil por Daños a Terceros",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "$ 3,000,000"
+            }
+          ],
+          "deducibles": [],
+          "orden": 5,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001285",
+          "descCobertura": "Protección Legal",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 6,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000906",
+          "descCobertura": "Gastos Médicos Ocupantes",
+          "sas": [
+            {
+              "valor": "100000",
+              "valorFormato": "$ 100,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 7,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000904",
+          "descCobertura": "Extensión Cobertura Resp. Civil",
+          "sas": [
+            {
+              "valor": "3000000",
+              "valorFormato": "$ 3,000,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 8,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001268",
+          "descCobertura": "Club GNP Autos",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 9,
+          "idTipoCobertura": 0,
+          "elite": false
+        }
+      ]
+    },
+    {
+      "cvePaquete": "PRCA2AMPVD",
+      "descPaquete": "AMPLIA-17-17                                      ",
+      "coberturas": [
+        {
+          "cveCobertura": "0000001288",
+          "descCobertura": "Daños Materiales Pérdida Total",
+          "sas": [
+            {
+              "valor": "101115.000",
+              "valorFormato": "$ 101,115"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "0",
+              "valorFormato": "$ 0"
+            }
+          ],
+          "orden": 1,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001289",
+          "descCobertura": "Daños Materiales Pérdida Parcial",
+          "sas": [
+            {
+              "valor": "101115.000",
+              "valorFormato": "$ 101,115"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "10",
+              "valorFormato": "$ 10,111"
+            }
+          ],
+          "orden": 2,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000891",
+          "descCobertura": "Cristales",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "20",
+              "valorFormato": "20 %"
+            }
+          ],
+          "orden": 3,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000916",
+          "descCobertura": "Robo Total",
+          "sas": [
+            {
+              "valor": "101115.000",
+              "valorFormato": "$ 101,115"
+            }
+          ],
+          "deducibles": [
+            {
+              "valor": "0",
+              "valorFormato": "$ 0"
+            }
+          ],
+          "orden": 4,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001273",
+          "descCobertura": "Responsabilidad Civil por Daños a Terceros",
+          "sas": [
+            {
+              "valor": "1000000",
+              "valorFormato": "$ 1,000,000"
+            }
+          ],
+          "deducibles": [],
+          "orden": 5,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001285",
+          "descCobertura": "Protección Legal",
+          "sas": [
+            {
+              "valor": "1000000",
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 6,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000906",
+          "descCobertura": "Gastos Médicos Ocupantes",
+          "sas": [
+            {
+              "valor": "100000",
+              "valorFormato": "$ 100,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 7,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000000904",
+          "descCobertura": "Extensión Cobertura Resp. Civil",
+          "sas": [
+            {
+              "valor": "1000000",
+              "valorFormato": "$ 1,000,000"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 8,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001268",
+          "descCobertura": "Club GNP Autos",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "No aplica"
+            }
+          ],
+          "orden": 9,
+          "idTipoCobertura": 0,
+          "elite": false
+        },
+        {
+          "cveCobertura": "0000001499",
+          "descCobertura": "Protege GNP",
+          "sas": [
+            {
+              "valorFormato": "AMPARADA"
+            }
+          ],
+          "deducibles": [
+            {
+              "valorFormato": "NO APLICA"
+            }
+          ],
+          "orden": 26,
+          "idTipoCobertura": 0,
+          "elite": false
+        }
+      ]
+    }
+  ],
+  "subRamo": "01",
+  "tipoUso": "01",
+  "tipoVehiculo": "CA2",
+  "tipoPersona": "F",
+  "formaIndemnizacion": "03",
+  "valorVehiculo": 101115.0,
+  "codigoPromocion": "COP0000332"
+}

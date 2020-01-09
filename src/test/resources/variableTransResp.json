@@ -1,0 +1,305 @@
+{
+  "variablesTrans": [
+    {
+      "nombre": "Edad",
+      "clave": "30",
+      "valor": "30"
+    },
+    {
+      "nombre": "Genero",
+      "clave": "V",
+      "valor": "V"
+    },
+    {
+      "nombre": "Region",
+      "clave": "022",
+      "valor": "022"
+    }
+  ],
+  "paquetes": [
+    {
+      "cvePaquete": "PRCA2AMSVD",
+      "versionTransf": "0000000000",
+      "fechaTransf": "2014-05-26",
+      "coberturas": [
+        {
+          "cveCobertura": "0000001273",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001414",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001268",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000916",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001285",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000891",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000904",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000906",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001288",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001289",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        }
+      ]
+    },
+    {
+      "cvePaquete": "PRCA2LIMVD",
+      "versionTransf": "0000000000",
+      "fechaTransf": "2014-05-26",
+      "coberturas": [
+        {
+          "cveCobertura": "0000001499",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001273",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000916",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000906",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000904",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001268",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001285",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        }
+      ]
+    },
+    {
+      "cvePaquete": "PRCA2RC0VD",
+      "versionTransf": "0000000000",
+      "fechaTransf": "2014-05-26",
+      "coberturas": [
+        {
+          "cveCobertura": "0000000906",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001285",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000904",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001268",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001273",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        }
+      ]
+    },
+    {
+      "cvePaquete": "PRCA2AMPVD",
+      "versionTransf": "0000000000",
+      "fechaTransf": "2014-05-26",
+      "coberturas": [
+        {
+          "cveCobertura": "0000001268",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001273",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001288",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001289",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000916",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000891",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001285",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000904",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000001499",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        },
+        {
+          "cveCobertura": "0000000906",
+          "conductor": {
+            "edad": "30",
+            "genero": "V",
+            "region": "022"
+          }
+        }
+      ]
+    }
+  ]
+}

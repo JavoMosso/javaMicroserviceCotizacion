@@ -1,0 +1,40 @@
+server_port: 8102
+wsp_url_MUC: http://10.67.16.19/motorUnicoCalculoWeb/MotorUnicoCalculoWebImplPort
+#wsp_url_urlTarificador: http://localhost:8106/tarificador/tarificadorDatos 
+wsp_url_Tarificador: http://10.67.52.13/configuradorWeb/TarificadorDatosWebImplPort
+wsp_url_Rules: http://10.67.16.13:7950/esb/autos/reglas/ServicioReglasAutosCotizador
+wsp_url_RulesProd: http://10.67.16.14:7950/esb/autos/reglas/ServicioReglasAutosProductos
+wsp_url_Foliador: http://10.67.16.19/odsWeb/FoliadorWebImplPort
+wsp_url_ViaPago: http://10.67.16.19/configuradorWeb/CatalogoConfiguradorNegocioWebImplPort
+wsp_url_ConsultaCP: http://10.67.16.19/motorUnicoCalculoWeb/CalculoAdicionalesWebImplPort
+
+#wsp_url_Catalogos: http://wsp-catalogos-uat.oscp.gnp.com.mx/catalogo
+wsp_url_Catalogos: http://localhost:8101/catalogo
+#wsp_url_ElementosTaller: http://wsp-elementostaller-uat.oscp.gnp.com.mx/elementostaller/valorVehiculo
+wsp_url_ElementosTaller: http://localhost:8103/elementostaller/valorVehiculo
+#wsp_url_Transformacion: http://wsp-transformacion-uat.oscp.gnp.com.mx/transformacion/transformacionEOT
+wsp_url_Transformacion: http://localhost:8104/transformacion/transformacionEOT
+#wsp_url_FormatoImp: http://wsp-formatoimp-uat.oscp.gnp.com.mx/formatoimp/formatoImpresion
+wsp_url_FormatoImp: http://localhost:8108/formatoimp/formato
+#wsp_url_TransaccionIntermedia: http://wsp-txlogger-uat.oscp.gnp.com.mx/txlogger/logintermedia
+wsp_url_TransaccionIntermedia: http://localhost:8110/txlogger/logintermedia
+#wsp_url_Errores: http://wsp-erroresdb-uat.oscp.gnp.com.mx/erroresdb
+wsp_url_Errores: http://localhost:8105/erroresdb
+#wsp_url_Campania: http://wsp-campania-uat.oscp.gnp.com.mx/campania/campaniaEOT
+wsp_url_Campania: http://localhost:8107/campania/campaniaEOT
+#wsp_url_DescuentoNomina: http://wsp-descuentonomina-uat.oscp.gnp.com.mx/descuentoNomina/descuentoNomina/json
+wsp_url_DescuentoNomina: http://localhost:8115/descuentoNomina/descuentoNomina/json
+#wsp_url_BanderasRest: http://wsp-elementostaller-uat.oscp.gnp.com.mx/elementostaller/banderasAutos
+wsp_url_BanderasRest: http://localhost:8103/elementostaller/banderasAutos
+#wsp_url_UmoService: http://sica-config-edge-aut-sica-uat.oscp.gnp.com.mx
+wsp_url_UmoService: http://localhost:9023
+
+wsp_url_FormatoImpresion: http://localhost:8108/formatoimp/formato
+wsp_rootLogger: INFO 
+
+
+wsp_umovd: 'NOVENTADIR:OTRO'
+wsp_tarificador_comisionClave: COM
+wsp_timeout_soap: 10000
+wsp_timeout_rest: 10000
+   

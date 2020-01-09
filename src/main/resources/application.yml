@@ -1,0 +1,31 @@
+server:
+  port: ${server_port:9102}
+  
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: ${wsp_timeout_rest:10000}
+        readTimeout: ${wsp_timeout_rest:10000}
+        loggerLevel: full
+
+wsp_rootLogger: DEBUG
+
+wsp_url_MUC: http://10.67.16.19/motorUnicoCalculoWeb/MotorUnicoCalculoWebImplPort
+wsp_url_Tarificador: http://10.67.16.19/configuradorWeb/TarificadorDatosWebImplPort
+wsp_url_Rules: http://10.67.16.13:7950/esb/autos/reglas/ServicioReglasAutosCotizador
+wsp_url_RulesProd: http://10.67.16.13:7950/esb/autos/reglas/ServicioReglasAutosProductos
+wsp_url_Foliador: http://10.67.16.19/odsWeb/FoliadorWebImplPort
+
+wsp_url_Catalogos: https://wsp-catalogos-uat.oscpuat.gnp.com.mx/catalogo
+wsp_url_Transformacion: https://wsp-transformacion-uat.oscpuat.gnp.com.mx/transformacion/transformacionEOT
+wsp_url_TransaccionIntermedia: https://wsp-txlogger-uat.oscpuat.gnp.com.mx/txlogger/logintermedia
+wsp_url_Errores: https://wsp-erroresdb-uat.oscpuat.gnp.com.mx/erroresdb
+wsp_url_Campania: https://wsp-campania-uat.oscpuat.gnp.com.mx/campania/campaniaEOT
+wsp_url_DescuentoNomina: https://wsp-descuentonomina-uat.oscpuat.gnp.com.mx/descuentoNomina/descuentoNomina/json
+wsp_url_BanderasRest: https://wsp-elementostaller-uat.oscpuat.gnp.com.mx/elementostaller/banderasAutos
+wsp_url_UmoService: https://sica-config-edge-aut-sica-uat.oscpuat.gnp.com.mx
+wsp_url_cot_cotizacion: http://localhost:8301/cotcotizacion
+wsp_url_FormatoImpresion: https://wsp-formatoimp-uat.oscpuat.gnp.com.mx/formatoimp/formato
+
+wsp_timeout_soap: 10000

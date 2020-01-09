@@ -1,0 +1,144 @@
+{
+  "cotizaNegReq": {
+    "usuario": "WEBNE218",
+    "password": "GNP00GNP",
+    "idCotizacion": "",
+    "codigoPromocion": "COP0000332",
+    "iniVig": "20171111",
+    "finVig": "20181111",
+    "intermediario": "",
+    "idUMO": "NOVENTADIR",
+    "viaPago": "CL",
+    "cveTipoNomina": "",
+    "periodicidad": "T",
+    "numeroCaratula": "",
+    "elementos": [
+      {
+        "nombre": "CODIGO_PROMOCION",
+        "clave": "COP0000332",
+        "valor": "COP0000332"
+      }
+    ],
+    "vehiculo": {
+      "subRamo": "01",
+      "tipoVehiculo": "CA2",
+      "claveMarca": "CA2FR0701",
+      "modelo": "2007",
+      "armadora": "FR",
+      "descArmadora": "",
+      "carroceria": "07",
+      "version": "01",
+      "uso": "01",
+      "formaIndemnizacion": "03",
+      "tipoValorVehiculo": "03"
+    },
+    "personas": [
+      {
+        "tipo": "CONTRATANTE",
+        "tipoPersona": "F",
+        "idParticipante": "",
+        "cveClienteOrigen": "",
+        "codigoCliente": "",
+        "aPaterno": "",
+        "aMaterno": "",
+        "nombre": "",
+        "edad": "",
+        "estadoCivil": "",
+        "rfc": "",
+        "curp": "",
+        "fiel": "",
+        "ocupacion": "",
+        "fecNacimiento": "",
+        "nacionalidad": "",
+        "sexo": "",
+        "razonSocial": "",
+        "giro": "",
+        "fecConstitucion": "",
+        "tipoDocumento": "",
+        "numeroIdentificacion": "",
+        "descuentoSiniestralidad": "",
+        "paisNacimiento": "",
+        "banIrrevocable": "",
+        "banPreferente": "",
+        "secBeneficiario": "",
+        "pctBeneficio": "",
+        "cveTextoBeneficiario": "r3",
+        "textoBeneficio": "",
+        "tipoParticipante": "",
+        "domicilio": {
+          "codigoPostal": "77795"
+        }
+      },
+      {
+        "tipo": "CONDUCTOR",
+        "tipoPersona": "",
+        "idParticipante": "",
+        "cveClienteOrigen": "",
+        "codigoCliente": "",
+        "aPaterno": "",
+        "aMaterno": "",
+        "nombre": "",
+        "edad": "30",
+        "estadoCivil": "",
+        "rfc": "",
+        "curp": "",
+        "fiel": "",
+        "ocupacion": "",
+        "fecNacimiento": "19870101",
+        "nacionalidad": "",
+        "sexo": "M",
+        "razonSocial": "",
+        "giro": "",
+        "fecConstitucion": "",
+        "tipoDocumento": "",
+        "numeroIdentificacion": "",
+        "descuentoSiniestralidad": "",
+        "paisNacimiento": "",
+        "banIrrevocable": "",
+        "banPreferente": "",
+        "secBeneficiario": "",
+        "pctBeneficio": "",
+        "cveTextoBeneficiario": "r3",
+        "textoBeneficio": "",
+        "tipoParticipante": "",
+        "domicilio": {
+          "codigoPostal": "77795"
+        }
+      }
+    ],
+    "paquetes": [
+      {
+        "cvePaquete": "PRCA2AMPVD",
+        "descPaquete": "AMPLIA-17-17-COPIA",
+        "coberturas": [],
+        "descuentos": [
+          {
+            "cveDescuento": "POVASEGP",
+            "unidadMedida": "PORC",
+            "valor": "10"
+          }
+        ]
+      },
+      {
+        "cvePaquete": "PRCA2AMPVD",
+        "descPaquete": "AMPLIA-17-17",
+        "coberturas": [],
+        "descuentos": [
+          {
+            "cveDescuento": "POVASEGP",
+            "unidadMedida": "PORC",
+            "valor": "10"
+          }
+        ]
+      }
+    ],
+    "descuentos": [
+      {
+        "cveDescuento": "POVASEGP",
+        "unidadMedida": "PORC",
+        "valor": "10"
+      }
+    ]
+  },
+  "tid": 850
+}

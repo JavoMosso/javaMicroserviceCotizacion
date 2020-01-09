@@ -1,0 +1,10 @@
+# Gradle files
+build
+.gradle
+
+# Eclipse files
+.project
+.classpath
+.settings
+bin
+*.bak

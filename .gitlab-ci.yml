@@ -1,0 +1,23 @@
+before_script:
+  - chmod +x gradlew
+  - git log -1 --pretty=%s
+  - git config --global user.name "autoversioner"
+  - git config --global user.email "git@gnp.com.mx"
+  - export SSH_PUSH_REPO=`echo $CI_REPOSITORY_URL | perl -pe 's#.*@(.+?(\:\d+)?)/#git@\1:#'`
+  - git remote set-url --push origin "$SSH_PUSH_REPO"
+
+stages:
+  - release
+
+gradle-release:
+  stage: release
+  tags:
+    - 'java8'
+    - 'gradle'
+  script: 
+    - ./gradlew clean createRelease -Prelease.disableChecks
+    - git push origin --tags
+    - ./gradlew clean currentVersion build test jacocoTestReport publish
+  after_script:
+    - bash automic_deploy_oc.sh
+  when: manual
